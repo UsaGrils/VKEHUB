@@ -1,0 +1,492 @@
+
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Watch Video</title>
+    <meta name="description" content="Watch video online">
+
+    <!-- ==================================================
+         HISTATS
+         ================================================== -->
+
+    <script type="text/javascript">
+
+        var _Hasync = _Hasync || [];
+
+        _Hasync.push([
+            'Histats.start',
+            '1,5044824,4,9,110,60,00011111'
+        ]);
+
+        _Hasync.push([
+            'Histats.fasi',
+            '1'
+        ]);
+
+        _Hasync.push([
+            'Histats.track_hits',
+            ''
+        ]);
+
+        (function () {
+
+            var hs = document.createElement('script');
+
+            hs.type = 'text/javascript';
+            hs.async = true;
+            hs.src = '//s10.histats.com/js15_as.js';
+
+            var s = document.getElementsByTagName('script')[0];
+
+            s.parentNode.insertBefore(hs, s);
+
+        })();
+
+    </script>
+
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html,
+        body {
+            width: 100%;
+            min-height: 100%;
+        }
+
+        body {
+            background: #0b0b0b;
+            color: #fff;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 15px;
+        }
+
+
+        /* ==================================================
+           BANNER 320x50
+        ================================================== */
+
+        .banner-area {
+            width: 320px;
+            height: 50px;
+            margin: 10px auto 20px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            overflow: hidden;
+        }
+
+        #banner-ads {
+            width: 320px;
+            height: 50px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+        /* ==================================================
+           VIDEO
+        ================================================== */
+
+        .video-box {
+            width: 100%;
+
+            background: #000;
+
+            border-radius: 12px;
+
+            overflow: hidden;
+
+            box-shadow:
+                0 8px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        #myVideo {
+            display: block;
+
+            width: 100%;
+            height: auto;
+
+            max-height: 80vh;
+
+            background: #000;
+        }
+
+
+        /* ==================================================
+           NATIVE ADS
+        ================================================== */
+
+        .native-box {
+            width: 100%;
+
+            margin: 20px 0;
+
+            padding: 15px;
+
+            background: #171717;
+
+            border: 1px solid #292929;
+
+            border-radius: 12px;
+        }
+
+        .native-label {
+            color: #777;
+
+            font-size: 10px;
+
+            text-align: center;
+
+            text-transform: uppercase;
+
+            letter-spacing: 1px;
+
+            margin-bottom: 10px;
+        }
+
+        #native-ads {
+            width: 100%;
+
+            min-height: 120px;
+
+            text-align: center;
+
+            overflow: visible;
+        }
+
+
+        /* ==================================================
+           HISTATS
+           
+           TIDAK DISEMBUNYIKAN
+        ================================================== */
+
+        #histats-area {
+            position: relative;
+
+            width: 100%;
+
+            min-height: 30px;
+
+            height: auto;
+
+            margin: 20px 0;
+
+            text-align: center;
+
+            overflow: visible;
+
+            opacity: 1;
+
+            pointer-events: auto;
+        }
+
+        #histats_counter {
+            width: 100%;
+
+            height: auto;
+
+            min-height: 20px;
+
+            text-align: center;
+        }
+
+
+        /* ==================================================
+           FOOTER
+        ================================================== */
+
+        footer {
+            text-align: center;
+
+            color: #555;
+
+            font-size: 11px;
+
+            padding: 20px 0;
+        }
+
+
+        /* ==================================================
+           MOBILE
+        ================================================== */
+
+        @media (max-width: 600px) {
+
+            .container {
+                padding: 10px;
+            }
+
+            .video-box {
+                border-radius: 8px;
+            }
+
+            .native-box {
+                padding: 10px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+
+    <!-- ==================================================
+         BANNER 320x50
+    ================================================== -->
+
+    <div class="banner-area">
+
+        <div id="banner-ads"></div>
+
+    </div>
+
+
+    <!-- ==================================================
+         VIDEO
+         
+         GANTI LINK VIDEO DI BAGIAN src
+    ================================================== -->
+
+    <div class="video-box">
+
+        <video
+            id="myVideo"
+            autoplay
+            muted
+            playsinline
+            controls
+            preload="metadata"
+            width="100%">
+
+            <source
+                src="https://cdn.videy.co/qbo1meGy1.mp4"
+                type="video/mp4">
+
+            Browser Anda tidak mendukung video HTML5.
+
+        </video>
+
+    </div>
+
+
+    <!-- ==================================================
+         NATIVE BANNER
+    ================================================== -->
+
+    <div class="native-box">
+
+        <div class="native-label">
+            Advertisement
+        </div>
+
+        <div id="native-ads">
+
+            <div id="container-901dd8336d77d3fccf8d91372fc1254b">
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ==================================================
+         HISTATS
+         
+         TIDAK DISEMBUNYIKAN
+    ================================================== -->
+
+    <div id="histats-area">
+
+        <div id="histats_counter"></div>
+
+    </div>
+
+
+    <footer>
+
+        © 2026
+
+    </footer>
+
+
+</div>
+
+
+<script>
+
+document.addEventListener(
+    'DOMContentLoaded',
+    function () {
+
+
+        /* ==================================================
+           ADSTERRA BANNER 320x50
+        ================================================== */
+
+        try {
+
+            window.atOptions = {
+
+                'key':
+                '25d71dd44720319f1f81a0d1a91b838d',
+
+                'format':
+                'iframe',
+
+                'height':
+                50,
+
+                'width':
+                320,
+
+                'params':
+                {}
+
+            };
+
+
+            var bannerScript =
+                document.createElement('script');
+
+
+            bannerScript.src =
+                'https://gasptournament.com/25d71dd44720319f1f81a0d1a91b838d/invoke.js';
+
+
+            bannerScript.async = true;
+
+
+            document
+                .getElementById('banner-ads')
+                .appendChild(bannerScript);
+
+
+        } catch (error) {
+
+            console.log(
+                'Banner gagal dimuat:',
+                error
+            );
+
+        }
+
+
+        /* ==================================================
+           ADSTERRA NATIVE BANNER
+        ================================================== */
+
+        try {
+
+            var nativeScript =
+                document.createElement('script');
+
+
+            nativeScript.async = true;
+
+
+            nativeScript.setAttribute(
+                'data-cfasync',
+                'false'
+            );
+
+
+            nativeScript.src =
+                'https://gasptournament.com/901dd8336d77d3fccf8d91372fc1254b/invoke.js';
+
+
+            document
+                .getElementById('native-ads')
+                .appendChild(nativeScript);
+
+
+        } catch (error) {
+
+            console.log(
+                'Native banner gagal dimuat:',
+                error
+            );
+
+        }
+
+
+        /* ==================================================
+           VIDEO AUTOPLAY
+        ================================================== */
+
+        var video =
+            document.getElementById('myVideo');
+
+
+        if (video) {
+
+            video.muted = true;
+
+
+            var playPromise =
+                video.play();
+
+
+            if (
+                playPromise !== undefined
+            ) {
+
+                playPromise.catch(
+                    function () {
+
+                        console.log(
+                            'Autoplay diblokir browser. Tekan tombol Play.'
+                        );
+
+                    }
+                );
+
+            }
+
+        }
+
+
+    }
+);
+
+
+/* ======================================================
+   GITHUB PAGES DEPLOYMENT TEST
+====================================================== */
+
+// GitHub Pages deployment test
+
+</script>
+
+
+</body>
+
+</html>
+```
